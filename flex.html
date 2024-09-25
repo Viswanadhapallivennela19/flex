@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex Concept</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+             
+        }
+        body{
+            width: 100%;
+        }
+        header{position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(0, 0, 255, 0.649);
+            color: white;
+            align-items: center;
+            padding:10px;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+        nav ul a{
+            margin: 0 20px;
+        }
+        a{
+            text-decoration:none;
+            color: white;
+            font-size:18px;
+        }
+        header span{
+            color: brown;
+            font-size: 36px;
+        }
+        header a:hover{
+            letter-spacing:5px;
+            font-weight: 400;
+            /* box-shadow: 12px 12px 12px rgba(0,0,0,0.1),-10px -10px 10px rgba(255, 255, 255, 0.362); */
+            padding:5px 15px;
+            box-shadow:2px 2px 5px 5px rgba(0, 0, 0, 0.181);
+            border-radius: 5px;
+            /* color: rgb(238, 7, 7); */
+            transition: all  0.8s;
+            margin-top: -5px;
+        }
+        main{
+            margin-top: 75px;
+        }
+         .sub-child1 p span{
+            color:green;
+            font-size: 20px;
+         }
+         .sub-child1{
+            margin:0 0 0 8px;
+         }
+         .card-container{
+            width:90%;
+            margin: auto;
+            background-color:whitesmoke;
+            /* box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.166); */
+            border-radius: 5px;
+            display: flex;
+            justify-content:space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+            
+         }
+         .child1 img{
+            width: 120px;
+            height: 100px;
+         }
+         .child1{
+            
+            display:flex;
+           
+            align-items: center;
+             
+         }
+         .child{
+            width:400px;
+            background-color: white;
+            padding: 20px;
+            box-shadow:2px 2px 5px 5px rgba(0, 0, 0, 0.203);
+            border-radius: 5px;
+         }
+         /* .card-section{
+               margin: auto;
+         } */
+         .card-section a{
+            color: blue;
+            font-family:cursive;
+         }
+         .card-section a:hover{
+            letter-spacing: 5px;
+            transition: all ease 0.8s;
+         }
+        .dis-flex{
+            display: flex;
+            justify-content:space-between;
+            align-items: flex-end;
+            margin-top: 15px;
+        }
+        .dis-flex a{
+            font-size:20px;
+        }
+        .card-container-content{
+            margin-top: 20px;
+            font-weight:600;
+        }
+        .sub-child1 p{
+            margin-top: 5px;
+            font-weight:600;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span>Flex</span> Content</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card-section">
+            <div class="card-container">
+                <div class="child">
+                <div class="child1">
+                    <img src="stripe.png" alt="s logo">
+                    <div class="sub-child1">
+                        <h1>Stripe</h1>
+                        <p>Payment Service</p>
+                        <p><span>&#9733; &#9733; &#9733; &#9733;</span></p>
+                    </div>
+                    
+                </div>
+                <p class="card-container-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ipsa!</p>
+                <div class="dis-flex" >
+                    <p>Installed 190 Items</p>
+                    <a href="#">view<span>&gt;</span></a>
+                </div>
+                </div>
+             
+                <div class="child">
+                <div class="child1">
+                    <img src="mailchimp.png" alt="s logo">
+                    <div class="sub-child1">
+                        <h1>MailChimp</h1>
+                        <p>Payment Service</p>
+                        <p><span>&#9733; &#9733; &#9733; &#9733;</span></p>
+                    </div>
+                </div>
+                <p class="card-container-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eos obcaecati porro!</p>
+                <div class="dis-flex">
+                    <p>Installed 560 Items</p>
+                    <a href="#">view<span>&gt;</span></a>
+                </div>
+                </div>
+                <div class="child">
+                <div class="child1"> 
+                    <img src="dropbox.png" alt="s logo">
+                    <div class="sub-child1">
+                        <h1>Dropbox</h1>
+                        <p>Payment Service</p>
+                        <p><span>&#9733; &#9733; &#9733; &#9733;</span></p>
+                    </div>
+                </div>
+                <p class="card-container-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. A architecto tempore non explicabo.</p>
+                <div class="dis-flex">
+                    <p>Installed 160 Items</p>
+                    <a href="#">view<span>&gt;</span></a>
+                </div>
+                </div>
+                <div class="child">
+                <div class="child1"> 
+                    <img src="shopify.png" alt="s logo">
+                    <div class="sub-child1">
+                        <h1>Shopify</h1>
+                        <p>Payment Service</p>
+                        <p><span>&#9733; &#9733; &#9733; &#9733;</span></p>
+                    </div>
+                </div>
+                <p class="card-container-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit?</p>
+                <div class="dis-flex"> 
+                    <p>Installed 500 Items</p>
+                    <a href="#">view<span>&gt;</span></a>
+                </div>
+                </div>
+                <div class="child">
+                <div class="child1"> 
+                    <img src="atlasian.png" alt="s logo">
+                    <div class="sub-child1">
+                        <h1>Atlassian</h1>
+                        <p>Payment Service</p>
+                        <p><span>&#9733; &#9733; &#9733; &#9733;</span></p>
+                    </div>
+                </div>
+                <p class="card-container-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, blanditiis?</p>
+                <div class="dis-flex"> 
+                    <p>Installed 1100 Items</p>
+                    <a href="#">view<span>&gt;</span></a>
+                </div>
+                 
+                </div>
+                <div class="child">
+                <div class="child1"> 
+                    <img src="salesforce.png" alt="s logo">
+                    <div class="sub-child1">
+                        <h1>Salesforce</h1>
+                        <p>Payment Service</p>
+                        <p><span>&#9733; &#9733; &#9733; &#9733;</span></p>
+                    </div>
+                </div>
+                <p class="card-container-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, nam!</p>
+                <div class="dis-flex">
+                    <p>Installed 130 Items</p>
+                    <a href="#">view<span>&gt;</span></a>
+                </div>
+            </div>
+             
+        </section>
+    </main>
+</body>
+</html>

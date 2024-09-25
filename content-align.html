@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Align</title>
+</head>
+<body>
+    <table border="1" cellpadding="10">
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Applies To</th>
+            <th>Axis</th>
+            <th>Purpose</th>
+            <th>Common Values</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>justify-content</td>
+            <td>Container (flex/grid)</td>
+            <td>Main axis</td>
+            <td>Aligns flex/grid items along the main axis (horizontal in <code>row</code>, vertical in <code>column</code>)</td>
+            <td>flex-start, flex-end, center, space-between, space-around, space-evenly</td>
+          </tr>
+          <tr>
+            <td>align-items</td>
+            <td>Container (flex/grid)</td>
+            <td>Cross axis</td>
+            <td>Aligns flex/grid items along the cross axis (perpendicular to the main axis)</td>
+            <td>stretch, flex-start, flex-end, center, baseline</td>
+          </tr>
+          <tr>
+            <td>align-self</td>
+            <td>Individual flex/grid item</td>
+            <td>Cross axis</td>
+            <td>Aligns a single flex/grid item along the cross axis, overriding <code>align-items</code></td>
+            <td>auto, flex-start, flex-end, center, baseline, stretch</td>
+          </tr>
+          <tr>
+            <td>align-content</td>
+            <td>Container (multi-line flex/grid)</td>
+            <td>Cross axis (multi-line)</td>
+            <td>Aligns flex/grid lines along the cross axis when items wrap onto multiple lines</td>
+            <td>flex-start, flex-end, center, space-between, space-around, stretch</td>
+          </tr>
+        </tbody>
+      </table>
+      
+</body>
+</html>
